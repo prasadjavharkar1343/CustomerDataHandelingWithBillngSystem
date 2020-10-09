@@ -1,0 +1,133 @@
+<html>
+<head>
+
+<style>
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style> 
+<br/>
+
+<b>
+<u>
+<h1 align="center" >
+<font color="blue">WELCOME TO THE SAMARTH OPTICAL CO.</font>
+</h1>
+</u>
+</b>
+ <form action="index.php">
+        <h2 align="left">
+
+  <button class="button">Home</button>
+  </h2>
+</form>
+<b>
+<u>
+<h1 align="center" >
+<font color="white">INSERT THE NEW CUSTOMER</font>
+</h1>
+</u>
+</b>
+</head>
+ 
+<body>
+<u><body background=".jpg">
+    
+  <body style='background-color:GRAY'>
+    <br/><br/>
+ 
+    <form action="add.php" method="post" name="form1" enctype="multipart/form-data">
+        <table align="center"  border="5">
+            <tr> 
+                <td style="width: 150px;"><font color="white">Name</font></td>
+        <td><input style="width: 632px;" type="text" name="name" required></td>
+            </tr>
+            <tr> 
+                <td style="width: 150px;"><font color="white">Age</font></td>
+                <td><input style="width: 632px;"type="text" name="age" required></td>
+            </tr>
+            <tr> 
+                <td><font color="white" >Gender</font></td>
+                <td>
+                  <fieldset>
+      <div class="some-class">
+        <input type="radio" class="radio" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" class="radio" name="gender" value="Female" required />
+        <label for="female">Female</label>
+        <input type="radio" class="radio" name="gender" value="Other" required />
+        <label for="other">other</label>
+      </div>
+    </fieldset>
+
+      </td>
+            </tr>
+            <tr> 
+                <td><font color="white">Birth Date</font></td>
+                <td><input type="date" id="start" name="birthdate" value="YYYY-MM-DD" min="1900-01-01" max="2025-12-31"></td>
+            </tr>
+            
+            <tr> 
+                <td><font color="white">Address</font></td>
+                <td><textarea  style="width: 150px;"type="text" name="address" required></textarea> </td>
+            </tr>
+            <tr> 
+                <td><font color="white">Contact No</font></td>
+                <td><input style="width: 150px;"type="text" name="contact" required></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Model Type / No.</font></td>
+                <td><input style="width: 150px;"type="text" name="model" required></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Visiting Date</font></td>
+                <td><input style="width: 150px;"type="date" id="start" name="visitingdate" value="YYYY-MM-DD" min="2020-01-01" max="2025-12-31" required></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Expiry Date</font></td>
+                <td><input type="date" id="start" name="expdate" value="YYYY-MM-DD" min="2020-01-01" max="2025-12-31"></td>
+            </tr>
+            
+            <tr> 
+                <td><font color="white">MRP</font></td>
+                <td><input style="width: 150px;"type="text" id="start" name="mrp" required></td>
+            </tr>
+
+            <tr>
+                <td><font color="white">File</font></td>
+                <td> 
+                <input style="width: 350px;"type="file" name="image" />
+                </td>
+            </tr>
+            <tr> 
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+    <h2 align="center"><input  style="width: 150px;" type="submit" name="Submit" class="button" value="Submit Customer Data"></h2>
+    </form>
+</body>
+</html>

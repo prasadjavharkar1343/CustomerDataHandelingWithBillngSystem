@@ -1,0 +1,115 @@
+
+<html>
+<head>
+
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style> 
+<br/><h6 align='left'><button class='button'><a href='index.php'>Home</a></button></h6>
+<b>
+<u>
+<h1 align="center" >
+<font color="blue">WELCOME TO THE SAMARTH OPTICAL CO.</font>
+</h1>
+</u>
+</b>
+
+<b>
+<u>
+<h1 align="center" >
+<font color="white">INSERT THE NEW CUSTOMER</font>
+</h1>
+</u>
+</b>
+</head>
+ 
+<body>
+<u><body background=".jpg">
+    
+	<body style='background-color:GRAY'>
+    <br/><br/>
+ 
+    <form action="add.php" method="post" name="form1" enctype="multipart/form-data">
+        <table align="center" width="40%" border="20">
+            <tr> 
+                <td><font color="white">Name</font></td>
+				<td><input type="text" name="name"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Age</font></td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Gender</font></td>
+                <td><select name="gender">
+                <option value=""></option>
+    			<option value="male">Male</option>
+    			<option value="fmale">Female</option>
+    			<option value="other">Other</option>
+    			</select>
+			</td>
+            </tr>
+            <tr> 
+                <td><font color="white">Birth Date</font></td>
+                <td><input type="date" id="start" name="birthdate" value="YYYY-MM-DD" min="1900-01-01" max="2025-12-31"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Address</font></td>
+                <td><textarea type="text" name="address"></textarea> </td>
+            </tr>
+            <tr> 
+                <td><font color="white">Contact No</font></td>
+                <td><input type="text" name="contact"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Model No</font></td>
+                <td><input type="text" name="model"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Visiting Date</font></td>
+                <td><input type="date" id="start" name="visitingdate" value="YYYY-MM-DD" min="2020-01-01" max="2025-12-31"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">Expiry Date</font></td>
+                <td><input type="date" id="start" name="expdate" value="YYYY-MM-DD" min="2020-01-01" max="2025-12-31"></td>
+            </tr>
+            <tr> 
+                <td><font color="white">MRP</font></td>
+                <td><input type="text" id="start" name="mrp"></td>
+            </tr>
+            <tr>
+                <td><font color="white">File</font></td>
+                <td> 
+                <input type="file" name="image" />
+                </td>
+            </tr>
+            <tr> 
+                <td></td>
+                <td><input type="submit" name="Submit" class="button" value="Submit Customer Data"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
